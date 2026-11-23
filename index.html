@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="0; url=https://wimby-app.github.io/" />
+  <link rel="canonical" href="https://wimby-app.github.io/" />
+  <title>Wimby עברה לכתובת חדשה</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f8fafc; color: #0f172a; text-align: center; padding: 24px; }
+    a { color: #4f46e5; font-weight: 700; }
+  </style>
+  <script>
+    (async function () {
+      try {
+        if ('serviceWorker' in navigator) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(regs.map((r) => r.unregister()));
+        }
+      } catch (e) {}
+      window.location.replace('https://wimby-app.github.io/');
+    })();
+  </script>
+</head>
+<body>
+  <p>Wimby עברה לכתובת חדשה: <a href="https://wimby-app.github.io/">https://wimby-app.github.io/</a></p>
+</body>
+</html>
